@@ -1,4 +1,4 @@
-let weather = {   //object 1
+let weatherData = {   //object 1
   "message": "accurate",
   "cod": "200",
   "count": 15,
@@ -561,7 +561,12 @@ let weather = {   //object 1
   ]
 }
 
-console.log(weather.list[0].name);
-console.log(weather.list[0].main);
-console.log(weather.list[0].main.pressure);
-console.log(weather.list[5].coord.lat);
+for (const prop in weatherData) {        //object
+  console.log(prop);                   //key
+  console.log(weatherData[prop]);        //value
+}
+
+// console.log(weather.list[0].name);
+// console.log(weather.list[0].main);
+// console.log(weather.list[0].main.pressure);
+// console.log(weather.list[5].coord.lat);
