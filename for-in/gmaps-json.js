@@ -1,4 +1,4 @@
-let gMaps = {
+let gMapLocation = {
   "markers": [
     {
       "name": "Rixos The Palm Dubai",
@@ -29,11 +29,17 @@ let gMaps = {
   ]
 }
 
+for (const location in gMapLocation) {        //object
+  console.log(location);                   //key
+  console.log(gMapLocation[location]);        //value
+}
+
+
 // console.log(gMaps.markers[1]);
 // console.log(gMaps.markers[2].name);
 
-for (locations in gMaps) {
-  console.log(eval("gMaps." + locations)); //output: value
-  console.log(locations);  //output: key
-  // console.log(gMaps.[locations]);  //doesn't work
-}
+// for (locations in gMaps) {
+//   console.log(eval("gMaps." + locations)); //output: value
+//   console.log(locations);  //output: key
+//   // console.log(gMaps.[locations]);  //doesn't work
+// }
