@@ -35,8 +35,14 @@ let ytApi = {
   ]
 }
 
-console.log(ytApi.items[1]);
-console.log(ytApi.items[2].id.kind);
+for (const prop in ytApi) {        //object
+  console.log(prop);                   //key
+  console.log(ytApi[prop]);        //value
+}
+
+
+// console.log(ytApi.items[1]);
+// console.log(ytApi.items[2].id.kind);
 
 
 
