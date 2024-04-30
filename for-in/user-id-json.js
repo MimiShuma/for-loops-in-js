@@ -1,4 +1,4 @@
-let user = {
+let userData = {
     "login": "octocat",
     "id": 1,
     "node_id": "MDQ6VXNlcjE=",
@@ -45,5 +45,13 @@ let user = {
     }
 }
 
-console.log(user.type);
-console.log(user.plan.name);
+
+for (const prop in userData) {        //object
+    console.log(prop);                   //key
+    console.log(userData[prop]);        //value
+}
+
+
+
+// console.log(user.type);
+// console.log(user.plan.name);
