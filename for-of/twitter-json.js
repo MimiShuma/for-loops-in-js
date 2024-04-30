@@ -1,5 +1,5 @@
-let twitter =
-  [{
+let twitterData = [
+  {
     "created_at": "Thu Jun 22 21:00:00 +0000 2017",
     "id": 877994604561387500,
     "id_str": "877994604561387520",
@@ -50,12 +50,17 @@ let twitter =
       "utc_offset": 43200,
       "time_zone": "Wellington",
     },
-  }]
+  }
+]
 
-console.log(twitter[0]);
-console.log(twitter[0].user.entities);
-console.log(twitter[0].user.entities.url.urls[0].url);
-console.log(twitter[0].entities.urls[0].indices[0]);
+for (const prop of twitterData) {
+  console.log(prop);
+}
+
+// console.log(twitter[0]);
+// console.log(twitter[0].user.entities);
+// console.log(twitter[0].user.entities.url.urls[0].url);
+// console.log(twitter[0].entities.urls[0].indices[0]);
 
 
 

@@ -1,4 +1,4 @@
-let WordPress = [
+let WordpressUser = [
   {
     "id": 157538,
     "date": "2017-07-21T10:30:34",
@@ -36,11 +36,14 @@ let WordPress = [
       1798,
       6298
     ]
-
   }
 ]
 
-console.log(WordPress[0].tags);
+for (const prop of WordpressUser) {
+  console.log(prop);
+}
+
+// console.log(WordPress[0].tags);
 
 
 
