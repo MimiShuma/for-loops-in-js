@@ -1,4 +1,4 @@
-let jsonServerData = {
+let clientData = {
   "clients": [
     {
       "id": "59761c23b30d971669fb42ff",
@@ -36,7 +36,10 @@ let jsonServerData = {
   ]
 }
 
-console.log();
+for (const client in clientData) {        //object
+  console.log(client);                   //key
+  console.log(clientData[client]);        //value
+}
 
 
 
