@@ -56,12 +56,29 @@ let colorList = {
   ]
 }
 
+
+for (const color in colorList) {        //object
+  console.log(color);                   //key
+  console.log(colorList[color]);        //value
+}
+
+
+let colors = colorList.colors;
+// console.log(colors);
+
+for (const color of colors) {           //array
+  console.log(color);
+}
+
+
+
+
 // console.log(colorList.colors[3]);
 // console.log(colorList.colors[4].code.rgba);
 // console.log(colorList.colors[5].code.hex);
 
-for (colors in colorList) {
-  console.log(eval("colorList." + colors)); //output: value
-  console.log(colors);  //output: key
-  // console.log(colorList.[colors]);  //doesn't work
-}
+// for (colors in colorList) {
+//   console.log(eval("colorList." + colors)); //output: value
+//   console.log(colors);  //output: key
+//   // console.log(colorList.[colors]);  //doesn't work
+// }
